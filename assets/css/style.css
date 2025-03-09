@@ -223,15 +223,15 @@ header .navbar ul li a:hover {
 
 .greeting-container {
     margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
+    opacity: 1;
 }
 
 .home .text-content .greeting {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #2d3436;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-weight: 500;
+    display: block;
 }
 
 .name-container {
@@ -245,8 +245,8 @@ header .navbar ul li a:hover {
     color: #2d3436;
     line-height: 1.2;
     margin-bottom: 1rem;
-    opacity: 0;
-    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 1;
+    display: block;
 }
 
 .home .text-content .name span {
@@ -495,8 +495,12 @@ body.dark-mode .social-icons a:hover {
         padding: 0 1rem;
     }
 
+    .home .text-content .greeting {
+        font-size: 1.8rem;
+    }
+    
     .home .text-content .name {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .text-animate h3 {
@@ -518,8 +522,12 @@ body.dark-mode .social-icons a:hover {
 }
 
 @media (max-width: 480px) {
+    .home .text-content .greeting {
+        font-size: 1.6rem;
+    }
+    
     .home .text-content .name {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .cta-buttons {
